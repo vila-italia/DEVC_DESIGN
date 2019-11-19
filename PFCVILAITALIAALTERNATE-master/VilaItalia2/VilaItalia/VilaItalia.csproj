@@ -2172,6 +2172,9 @@
     <Content Include="Views\Shared\FooterPartialView.cshtml" />
     <Content Include="Views\Shared\LogoutModalPartialView.cshtml" />
     <Content Include="Views\Deliveries\SimuladorFinalizarPedido.cshtml" />
+    <Content Include="Views\Shared\NavBarClientePartialView.cshtml" />
+    <Content Include="Views\Shared\NavBarFuncionarioPartialView.cshtml" />
+    <Content Include="Views\Shared\NavBarMotoboyPartialView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

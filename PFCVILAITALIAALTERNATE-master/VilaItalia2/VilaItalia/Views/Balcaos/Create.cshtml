@@ -1,49 +1,72 @@
 ﻿@Html.Partial("NavbarPartialView")  @*Redenriza a NavBar, localizado em Shared/NavbarPartialView*@
 
-<div class="container">
+
+@*<script>
+        $(function () {
+            $('#search').on('keyup', function () {
+                var pattern = $(this).val();
+                $('.items-collection .items').hide();
+                $('.items-collection .items').filter(function () {
+                    return $(this).text().match(new RegExp(pattern, 'i'));
+                }).show();
+            });
+        });
+    </script>*@
+
+
+<div class="form-control " style="font-size:30px; padding:4px; text-align:center">
+    PIZZAS
+</div>
+<div class="items-collection">
     <div class="row">
-        <div class="form-control " style="font-size:30px; padding:4px; text-align:center">
-            PIZZAS
+
+        <div class="col-lg-3 clearfix">
+            <div data-toggle="buttons" class="btn-group  bizmoduleselect ">
+                <label class="btn btn-outline-primary btn-block " style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px;margin-left:5px">
+                    <div class="itemcontent">
+                        <input type="checkbox" name="var_id[]" autocomplete="off" value="" hidden>
+                        <h5>Sabor 1</h5>
+                        <p style="font-size:10px">Descrição do sabor</p>
+                    </div>
+                </label>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>Sabor 1</p>
-            <p style="font-size:10px">Descrição do sabor</p>
-        </button>
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>Sabor 1</p>
-            <p style="font-size:10px">Descrição do sabor</p>
-        </button>
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>Sabor 1</p>
-            <p style="font-size:10px">Descrição do sabor</p>
-        </button>
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>Sabor 1</p>
-            <p style="font-size:10px">Descrição do sabor</p>
-        </button>
 
+        <div class="col-lg-3 clearfix">
+            <div data-toggle="buttons" class="btn-group  bizmoduleselect ">
+                <label class="btn btn-outline-primary btn-block" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px;margin-left:5px">
+                    <div class="itemcontent">
+                        <input type="checkbox" name="var_id[]" autocomplete="off" value="" hidden>
+                        <h5>Sabor 1</h5>
+                        <p style="font-size:10px">Descrição do sabor</p>
+                    </div>
+                </label>
+            </div>
+        </div>
 
+        <div class="col-lg-3 clearfix">
+            <div data-toggle="buttons" class="btn-group  bizmoduleselect ">
+                <label class="btn btn-outline-primary btn-block " style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px;margin-left:5px">
+                    <div class="itemcontent">
+                        <input type="checkbox" name="var_id[]" autocomplete="off" value="" hidden>
+                        <h5>Sabor 1</h5>
+                        <p style="font-size:10px">Descrição do sabor</p>
+                    </div>
+                </label>
+            </div>
+        </div>
 
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>Sabor 1</p>
-            <p style="font-size:10px">Descrição do sabor</p>
-        </button>
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>Sabor 1</p>
-            <p style="font-size:10px">Descrição do sabor</p>
-        </button>
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>Sabor 1</p>
-            <p style="font-size:10px">Descrição do sabor</p>
-        </button>
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>Sabor 1</p>
-            <p style="font-size:10px">Descrição do sabor</p>
-        </button>
-
-
+        <div class="col-lg-3 clearfix">
+            <div data-toggle="buttons" class="btn-group  bizmoduleselect ">
+                <label class="btn btn-outline-primary btn-block" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px;margin-left:5px">
+                    <div class="itemcontent">
+                        <input type="checkbox" name="var_id[]" autocomplete="off" value="" hidden>
+                        <h5>Sabor 1</h5>
+                        <p style="font-size:10px">Descrição do sabor</p>
+                    </div>
+                </label>
+            </div>
+        </div>
     </div>
 
     <div class="row">
@@ -52,80 +75,162 @@
         </div>
     </div>
 
-    <div class="row">
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>Bebida 1</p>
-            <p style="font-size:10px">Descrição da bebida</p>
-        </button>
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>Bebida 1</p>
-            <p style="font-size:10px">Descrição da bebida</p>
-        </button>
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>Bebida 1</p>
-            <p style="font-size:10px">Descrição da bebida</p>
-        </button>
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>Bebida 1</p>
-            <p style="font-size:10px">Descrição da bebida</p>
-        </button>
+    <div class="items-collection">
+        <div class="row">
+
+            <div class="col-lg-3 clearfix">
+                <div data-toggle="buttons" class="btn-group  bizmoduleselect ">
+                    <label class="btn btn-outline-primary btn-block " style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px;margin-left:5px">
+                        <div class="itemcontent">
+                            <input type="checkbox" name="var_id[]" autocomplete="off" value="" hidden>
+                            <h5>Bebida 1</h5>
+                            <p style="font-size:10px">Descrição da bebida</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-lg-3 clearfix">
+                <div data-toggle="buttons" class="btn-group  bizmoduleselect ">
+                    <label class="btn btn-outline-primary btn-block " style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px;margin-left:5px">
+                        <div class="itemcontent">
+                            <input type="checkbox" name="var_id[]" autocomplete="off" value="" hidden>
+                            <h5>Bebida 1</h5>
+                            <p style="font-size:10px">Descrição da bebida</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-lg-3 clearfix">
+                <div data-toggle="buttons" class="btn-group  bizmoduleselect ">
+                    <label class="btn btn-outline-primary btn-block " style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px;margin-left:5px">
+                        <div class="itemcontent">
+                            <input type="checkbox" name="var_id[]" autocomplete="off" value="" hidden>
+                            <h5>Bebida 1</h5>
+                            <p style="font-size:10px">Descrição da bebida</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-lg-3 clearfix">
+                <div data-toggle="buttons" class="btn-group  bizmoduleselect ">
+                    <label class="btn btn-outline-primary btn-block " style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px;margin-left:5px">
+                        <div class="itemcontent">
+                            <input type="checkbox" name="var_id[]" autocomplete="off" value="" hidden>
+                            <h5>Bebida 1</h5>
+                            <p style="font-size:10px">Descrição da bebida</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-lg-3 clearfix">
+                <div data-toggle="buttons" class="btn-group  bizmoduleselect ">
+                    <label class="btn btn-outline-primary btn-block " style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px;margin-left:5px">
+                        <div class="itemcontent">
+                            <input type="checkbox" name="var_id[]" autocomplete="off" value="" hidden>
+                            <h5>Bebida 1</h5>
+                            <p style="font-size:10px">Descrição da bebida</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-lg-3 clearfix">
+                <div data-toggle="buttons" class="btn-group  bizmoduleselect ">
+                    <label class="btn btn-outline-primary btn-block " style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px;margin-left:5px">
+                        <div class="itemcontent">
+                            <input type="checkbox" name="var_id[]" autocomplete="off" value="" hidden>
+                            <h5>Bebida 1</h5>
+                            <p style="font-size:10px">Descrição da bebida</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+        </div>
 
 
-    </div>
 
+        <div class="row">
+            <div class="form-control " style="margin-top:5px; font-size:30px; padding:4px; text-align:center">
+                SOBREMESAS
+            </div>
+        </div>
+        <div class="items-collection">
+            <div class="row">
 
+                <div class="col-lg-3 clearfix">
+                    <div data-toggle="buttons" class="btn-group  bizmoduleselect ">
+                        <label class="btn btn-outline-primary btn-block " style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px; margin-left:5px">
+                            <div class="itemcontent">
+                                <input type="checkbox" name="var_id[]" autocomplete="off" value="" hidden>
+                                <h5>Sobremesa 1</h5>
+                                <p style="font-size:10px">Descrição da sobremesa</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
 
-    <div class="row">
-        <div class="form-control " style="margin-top:5px; font-size:30px; padding:4px; text-align:center">
-            SOBREMESAS
+                <div class="col-lg-3 clearfix">
+                    <div data-toggle="buttons" class="btn-group  bizmoduleselect ">
+                        <label class="btn btn-outline-primary btn-block " style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px; margin-left:5px">
+                            <div class="itemcontent">
+                                <input type="checkbox" name="var_id[]" autocomplete="off" value="" hidden>
+                                <h5>Sobremesa 1</h5>
+                                <p style="font-size:10px">Descrição da sobremesa</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-8 col-md-10" style="margin:20px 0px 0px 900px">
+                    <input type="submit" value="Finalizar" class="btn btn-success" />
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="row">
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>SOBREMESA 1</p>
-            <p style="font-size:10px">Descrição da bebida</p>
-        </button>
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>SOBREMESA 1</p>
-            <p style="font-size:10px">Descrição da bebida</p>
-        </button>
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>SOBREMESA 1</p>
-            <p style="font-size:10px">Descrição da bebida</p>
-        </button>
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>SOBREMESA 1</p>
-            <p style="font-size:10px">Descrição da bebida</p>
-        </button>
 
+<style>
+    #search {
+        width: 90%;
+    }
 
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>SOBREMESA 1</p>
-            <p style="font-size:10px">Descrição da bebida</p>
-        </button>
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>SOBREMESA 1</p>
-            <p style="font-size:10px">Descrição da bebida</p>
-        </button>
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>SOBREMESA 1</p>
-            <p style="font-size:10px">Descrição da bebida</p>
-        </button>
-        <button type="button" class="btn btn-outline-primary btn-block col-lg-3" style="font-size:20px; padding-bottom:5px; text-align:left; margin-top:5px">
-            <p>SOBREMESA 1</p>
-            <p style="font-size:10px">Descrição da bebida</p>
-        </button>
-    </div>
+    .searchicon {
+        color: #5CB85C;
+    }
 
-    <div class="form-group">
-        <div class="col-md-offset-8 col-md-10" style="margin:20px 0px 0px 900px">
-            <input type="submit" value="Finalizar" class="btn btn-success" />
-        </div>
-    </div>
-</div>
+    .items-collection {
+        margin: 20px 0 0 0;
+    }
 
+        .items-collection label.btn-default.active {
+            background-color: #007ba7;
+            color: #FFF;
+        }
 
+        .items-collection label.btn-default {
+            width: 90%;
+            border: 1px solid #305891;
+            margin: 5px;
+            border-radius: 17px;
+            color: #305891;
+        }
+
+        .items-collection label .itemcontent {
+            width: 100%;
+        }
+
+        .items-collection .btn-group {
+            width: 90%
+        }
+</style>
 
 @Html.Partial("FooterPartialView") @*Redenriza a footer, localizado em Shared/FooterPartialView*@
 
